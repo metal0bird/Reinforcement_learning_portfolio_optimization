@@ -1,6 +1,5 @@
 CUDA_LAUNCH_BLOCKING=1 
 import gym
-import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd 
