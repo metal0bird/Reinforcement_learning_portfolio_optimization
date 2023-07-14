@@ -20,6 +20,7 @@
 - We also added signals for buy and sell based on other Algo-trading strategies such as moving average crossovers, resulting in a total of 50 features for each stock at each time step. Our observation space has a size of (number_of_stocks, number_of_timesteps, number_of_features).
 - We then spliced the data into the right window based on the frame_bound variable, scaled the data, and created a custom environment for our trading task. The step method in our environment is the most important, as it updates the current tick and takes the action for the next time step.
 - This project contributes to the field of reinforcement learning by providing insights into designing custom environments and policies for multi-stock portfolio optimization/trading, and showcases how to utilize OpenAI's Gym library and StableBaselines3 library for training RL models.
+- This project was inspired from [MultiStockRLTrading](https://github.com/Akhilesh-Gogikar/MultiStockRLTrading)
 
 ## Proposed System
 
