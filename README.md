@@ -81,3 +81,13 @@ conda env create --file=environment.yml
 6. DONE
 
 ---
+## Experimental Results
+
+- To evaluate the performance of our RL model on the multi-stock portfolio optimization and trading task, we conducted experiments on historical stock market data. We used a dataset consisting of (Open, High, Low, Close, Volume) data points at 5-minute intervals for 3 stocks in the Indian stock market along with an index fund, making for a total of 4 assets.
+
+The results of the tested models are:
+  -  suppression rate=66%, transaction cost=0
+    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.45.50%20AM.png)
+
+  
+
