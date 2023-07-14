@@ -88,6 +88,19 @@ conda env create --file=environment.yml
 The results of the tested models are:
   -  suppression rate=66%, transaction cost=0
     ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.45.50%20AM.png)
+    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.41%20AM.png)
+
+  -  suppression rate=50%, transaction cost=0.01
+    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.51%20AM.png)
+    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.00%20AM.png)
+
+  - suppression rate=0.75, transaction cost=0.05
+    ![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.08%20AM.png)
+    ![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.18%20AM.png)
+
+  - From the observed results, PPO and SAC  has earned the highest reward for suppression rate=66% and transaction cost=0 and A2C has earned the highest reward for suppression     rate=50% and transaction cost=0.01.
+Each model has predicted different actions for the test datasets which obtains different rewards.
+The suppression rate=75% and transactional cost=0.05 has generated the least rewards as a large proportion of the amount in the environment is reduced due to the transaction cost.
 
   
 
