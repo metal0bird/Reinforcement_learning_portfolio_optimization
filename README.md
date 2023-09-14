@@ -1,19 +1,12 @@
-# Reinforcement_learning_portfolio_optimization
-#### TODO
+## Reinforcement learning portfolio optimization
+
+### TODO
 - [ ] File Structure (like this image))
 - [ ] ![image](https://github.com/metal0bird/Portfolio_Optimization_Reinforcement_Learning/assets/83113185/d92f18bd-36e8-4123-9508-5548d22435c2)
 - [ ] Backend Fast API
 - [ ] FrontEnd with D3
 
-# About
-
-## Team Member
-
-- Aman Gupta
-- Metul Prabhu
-- Subhranshu Pati
-  
-## Abstract
+## About
 
 - Reinforcement learning has emerged as a promising approach to solve a variety of complex problems. In this project, we focus on designing a multi-stock portfolio optimization/trading environment using OpenAI's Gym library.
 - The aim is to demonstrate how to develop a custom environment and write a policy and neural network architecture for the learning agent. To accomplish this, we collected a dataset containing Open, High, Low, Close, and Volume data points at 5-minute intervals for 30 stocks from the Indian stock market along with the Sensex index values.
@@ -30,7 +23,7 @@
 - The stocks are preprocessed by modifying the attributes of the datasets. The timestamp attribute of the stocks is converted into the datetime data type and additional attributes of the dataset are removed such as the name and tokens.
 - Additional attributes are generated for the environment which has been defined for the multistock environment. These attributes are used for calculating the various parameters of the stocks to generate actions and rewards for the agent.
 
-# Pre-Requisite
+## Pre-Requisite
 
 - Window 7/10/11
 - Anaconda/Miniconda
@@ -39,9 +32,11 @@
 - Node JS v18
 - NPM
 
-# Procedure
+## Procedure
 
-## Website
+### Website
+
+<img width="1800" alt="Screenshot 2023-09-14 at 11 07 57 PM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/a4ae0eed-9e48-4d8a-89fb-e9f59f23784c">
 
 1. Download and extract the `jcomp.zip`  to your desired folder (say `dest`)
 2. In a new Powershell terminal
@@ -57,7 +52,7 @@ npm run dev
 
 ---
 
-## RL Agent
+### RL Agent
 
 1. Download and extract the `code.zip`  to your desired folder (say `dest`)
 2. In `code` folder, open `environment.yml`
@@ -82,26 +77,35 @@ conda env create --file=environment.yml
 6. DONE
 
 ---
-## Experimental Results
+### Experimental Results
 
 - To evaluate the performance of our RL model on the multi-stock portfolio optimization and trading task, we conducted experiments on historical stock market data. We used a dataset consisting of (Open, High, Low, Close, Volume) data points at 5-minute intervals for 3 stocks in the Indian stock market along with an index fund, making for a total of 4 assets.
 
 The results of the tested models are:
-  -  suppression rate=66%, transaction cost=0
-    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.45.50%20AM.png)
-    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.41%20AM.png)
 
-  -  suppression rate=50%, transaction cost=0.01
-    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.51%20AM.png)
-    ![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.00%20AM.png)
+-  suppression rate=66%, transaction cost=0
+    
+![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.45.50%20AM.png)
+![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.41%20AM.png)
 
-  - suppression rate=0.75, transaction cost=0.05
-    ![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.08%20AM.png)
-    ![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.18%20AM.png)
+-  suppression rate=50%, transaction cost=0.01
+    
+![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.51%20AM.png)
+![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.00%20AM.png)
 
-  - From the observed results, PPO and SAC  has earned the highest reward for suppression rate=66% and transaction cost=0 and A2C has earned the highest reward for suppression     rate=50% and transaction cost=0.01.
+- suppression rate=0.75, transaction cost=0.05
+
+![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.08%20AM.png)
+![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.18%20AM.png)
+
+- From the observed results, PPO and SAC  has earned the highest reward for suppression rate=66% and transaction cost=0 and A2C has earned the highest reward for suppression rate=50% and transaction cost=0.01.
+    
 Each model has predicted different actions for the test datasets which obtains different rewards.
 The suppression rate=75% and transactional cost=0.05 has generated the least rewards as a large proportion of the amount in the environment is reduced due to the transaction cost.
 
-  
+## Team Members
+
+- Aman Gupta
+- Metul Prabhu
+- Subhranshu Pati
 
