@@ -2,7 +2,7 @@
 
 ### TODO
 - [ ] File Structure (like this image))
-- [ ] ![image](https://github.com/metal0bird/Portfolio_Optimization_Reinforcement_Learning/assets/83113185/d92f18bd-36e8-4123-9508-5548d22435c2)
+- [ ] <img width="302" alt="Screenshot 2023-09-15 at 12 14 29 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/cf89d19a-7bcf-4d42-b111-b875183c8056">
 - [ ] Backend Fast API
 - [ ] FrontEnd with D3
 
@@ -23,7 +23,7 @@
 - The stocks are preprocessed by modifying the attributes of the datasets. The timestamp attribute of the stocks is converted into the datetime data type and additional attributes of the dataset are removed such as the name and tokens.
 - Additional attributes are generated for the environment which has been defined for the multistock environment. These attributes are used for calculating the various parameters of the stocks to generate actions and rewards for the agent.
 
-## Pre-Requisite
+### Pre-Requisite
 
 - Window 7/10/11
 - Anaconda/Miniconda
@@ -84,28 +84,39 @@ conda env create --file=environment.yml
 The results of the tested models are:
 
 -  suppression rate=66%, transaction cost=0
-    
-![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.45.50%20AM.png)
-![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.41%20AM.png)
+
+<img width="823" alt="Screenshot 2023-09-15 at 12 14 38 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/5a5e7540-8c5b-4937-b363-5842935d9227">
+
+<img width="817" alt="Screenshot 2023-09-15 at 12 14 45 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/911998ff-643a-4f5d-bf7d-b3a2a3089aac">
+
+<img width="810" alt="Screenshot 2023-09-15 at 12 14 52 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/452cf1e4-a9bf-46c0-ac16-b8306af09d87">
+
+<img width="801" alt="Screenshot 2023-09-15 at 12 14 59 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/00459b12-24c4-4a73-b08e-11d99c67f56c">
 
 -  suppression rate=50%, transaction cost=0.01
-    
-![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.46.51%20AM.png)
-![image](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.00%20AM.png)
+
+<img width="827" alt="Screenshot 2023-09-15 at 12 15 07 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/9a4d4700-977c-4bc4-b502-4422a663b0dc">
+
+<img width="800" alt="Screenshot 2023-09-15 at 12 15 13 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/f8b1f5af-8a49-42a2-9c88-27c37541538c">
+
+<img width="812" alt="Screenshot 2023-09-15 at 12 15 23 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/fd6f7a38-1be0-4358-94c5-cd21d95ba2d4">
+
+<img width="804" alt="Screenshot 2023-09-15 at 12 15 31 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/00140e1f-b598-47ea-889e-0bd3acad4907">
 
 - suppression rate=0.75, transaction cost=0.05
 
-![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.08%20AM.png)
-![images](https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/blob/main/assets/Screenshot%202023-07-14%20at%209.47.18%20AM.png)
+<img width="820" alt="Screenshot 2023-09-15 at 12 15 39 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/5fcbfa0d-dba4-4de0-8285-6d6a74a3b031">
+
+<img width="819" alt="Screenshot 2023-09-15 at 12 15 46 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/3996c491-9871-449d-bb05-a861177362fe">
+
+<img width="814" alt="Screenshot 2023-09-15 at 12 15 51 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/2b43fb82-4746-4550-8d8c-0467a9b7f075">
+
+<img width="765" alt="Screenshot 2023-09-15 at 12 15 58 AM" src="https://github.com/metal0bird/Reinforcement_learning_portfolio_optimization/assets/71923741/d15fd586-bd85-4def-829a-eddf8f3964a9">
 
 - From the observed results, PPO and SAC  has earned the highest reward for suppression rate=66% and transaction cost=0 and A2C has earned the highest reward for suppression rate=50% and transaction cost=0.01.
     
 Each model has predicted different actions for the test datasets which obtains different rewards.
 The suppression rate=75% and transactional cost=0.05 has generated the least rewards as a large proportion of the amount in the environment is reduced due to the transaction cost.
 
-## Team Members
 
-- Aman Gupta
-- Metul Prabhu
-- Subhranshu Pati
 
